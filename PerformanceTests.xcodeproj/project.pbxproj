@@ -13,6 +13,8 @@
 		2F17BE891F16C39000AB07E1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2F17BE881F16C39000AB07E1 /* Assets.xcassets */; };
 		2F17BE8C1F16C39000AB07E1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2F17BE8A1F16C39000AB07E1 /* LaunchScreen.storyboard */; };
 		2F17BE8F1F16C39000AB07E1 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F17BE8E1F16C39000AB07E1 /* main.m */; };
+		2F17BE971F16C3EC00AB07E1 /* MZPerformanceTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F17BE961F16C3EC00AB07E1 /* MZPerformanceTest.m */; };
+		2F17BE9A1F16C59F00AB07E1 /* NSString+Reverse.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F17BE991F16C59F00AB07E1 /* NSString+Reverse.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +28,10 @@
 		2F17BE8B1F16C39000AB07E1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2F17BE8D1F16C39000AB07E1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2F17BE8E1F16C39000AB07E1 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		2F17BE951F16C3EC00AB07E1 /* MZPerformanceTest.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MZPerformanceTest.h; sourceTree = "<group>"; };
+		2F17BE961F16C3EC00AB07E1 /* MZPerformanceTest.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MZPerformanceTest.m; sourceTree = "<group>"; };
+		2F17BE981F16C59F00AB07E1 /* NSString+Reverse.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSString+Reverse.h"; sourceTree = "<group>"; };
+		2F17BE991F16C59F00AB07E1 /* NSString+Reverse.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSString+Reverse.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,10 +64,14 @@
 		2F17BE7E1F16C39000AB07E1 /* PerformanceTests */ = {
 			isa = PBXGroup;
 			children = (
+				2F17BE951F16C3EC00AB07E1 /* MZPerformanceTest.h */,
+				2F17BE961F16C3EC00AB07E1 /* MZPerformanceTest.m */,
 				2F17BE7F1F16C39000AB07E1 /* AppDelegate.h */,
 				2F17BE801F16C39000AB07E1 /* AppDelegate.m */,
 				2F17BE821F16C39000AB07E1 /* ViewController.h */,
 				2F17BE831F16C39000AB07E1 /* ViewController.m */,
+				2F17BE981F16C59F00AB07E1 /* NSString+Reverse.h */,
+				2F17BE991F16C59F00AB07E1 /* NSString+Reverse.m */,
 				2F17BE851F16C39000AB07E1 /* Main.storyboard */,
 				2F17BE881F16C39000AB07E1 /* Assets.xcassets */,
 				2F17BE8A1F16C39000AB07E1 /* LaunchScreen.storyboard */,
@@ -142,8 +152,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				2F17BE841F16C39000AB07E1 /* ViewController.m in Sources */,
+				2F17BE9A1F16C59F00AB07E1 /* NSString+Reverse.m in Sources */,
 				2F17BE8F1F16C39000AB07E1 /* main.m in Sources */,
 				2F17BE811F16C39000AB07E1 /* AppDelegate.m in Sources */,
+				2F17BE971F16C3EC00AB07E1 /* MZPerformanceTest.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -277,7 +289,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = FG8NNNY6FP;
 				INFOPLIST_FILE = PerformanceTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.bitsonthego.1apps.PerformanceTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -289,7 +303,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = FG8NNNY6FP;
 				INFOPLIST_FILE = PerformanceTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.bitsonthego.1apps.PerformanceTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
